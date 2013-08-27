@@ -1,4 +1,4 @@
-todolist
-========
+Todo List
+=========
 
 Sample Ember Project.
