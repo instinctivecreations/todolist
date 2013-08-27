@@ -3,7 +3,7 @@ Todos.todo = DS.Model.extend({
 	isCompleted: DS.attr('boolean')
 });
 
-Todos.Todo.FIXTURES = [
+Todos.todo.FIXTURES = [
  {
    id: 1,
    title: 'Learn Ember.js',
