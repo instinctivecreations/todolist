@@ -21,7 +21,8 @@
 				      {{view Todos.EditTodoView valueBinding="title"}}
 				    {{else}}
 				      {{view Ember.Checkbox checkedBinding="isCompleted" class="toggle"}}
-				      <label {{action "editTodo" on="doubleClick"}}>{{title}}</label><button class="destroy"></button>
+				      <label {{action "editTodo" on="doubleClick"}}>{{title}}</label>
+					  <button {{action "removeTodo"}} class="destroy"></button>
 				    {{/if}}
 				  </li>
 				{{/each}}
@@ -57,7 +58,7 @@
 	    </footer>
 	</script>
 	
-	<!-- ... additional lines truncated for brevity ... -->
+	<!-- Js Files -->
 	  <script src="js/libs/jquery.min.js"></script>
 	  <script src="js/libs/handlebars.js"></script>
 	  <script src="js/libs/ember.js"></script>
@@ -70,6 +71,6 @@
 	  <script src="js/controllers/todos_controller.js"></script>
 	  <script src="js/controllers/todo_controller.js"></script>
 	  <script src="js/views/edit_todo_view.js"></script>
-	<!-- ... additional lines truncated for brevity ... -->
+	<!-- Js Files -->
   </body>
 </html>
